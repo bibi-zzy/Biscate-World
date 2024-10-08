@@ -5,68 +5,54 @@ let recursos = {
 };
 
 function mostrarRecursos() {
-    console.log(`Beleza: ${recursos.beauty}`);
-    console.log(`Inteligência: ${recursos.inteligencia}`);
-    console.log(`Dinheiro: ${recursos.dinheiro}`);
+    alert(`Recursos atuais:\nBeleza: ${recursos.beleza}\nInteligência: ${recursos.inteligencia}\nDinheiro: ${recursos.dinheiro}`);
 }
 
 function fase1() {
-    console.log("Fase 1: Você encontra um desafio.");
-    console.log("Escolha 1: Tentar impressionar com sua beleza.");
-    console.log("Escolha 2: Usar sua inteligência para resolver o problema.");
-    
-    let escolha = prompt("Digite 1 ou 2: ");
-    
+    let escolha = prompt("Fase 1: Você encontra um desafio.\nEscolha 1: Tentar impressionar com sua beleza.\nEscolha 2: Usar sua inteligência para resolver o problema.\nDigite 1 ou 2:");
+
     if (escolha === '1') {
-        console.log("Você impressionou alguém! Ganhou 2 beleza.");
-        recursos.beauty += 2;
+        alert("Você impressionou alguém! Ganhou 5 beleza.");
+        recursos.beleza += 5;  
     } else if (escolha === '2') {
-        console.log("Você resolveu o problema com sua inteligência! Ganhou 2 inteligência.");
-        recursos.inteligencia += 2;
+        alert("Você resolveu o problema com sua inteligência! Ganhou 3 inteligência.");
+        recursos.inteligencia += 3;
     } else {
-        console.log("Escolha inválida.");
+        alert("Escolha inválida. Você não ganhou nem perdeu recursos.");
     }
 }
 
 function fase2() {
-    console.log("Fase 2: Você encontra um dilema financeiro.");
-    console.log("Escolha 1: Investir dinheiro em um projeto.");
-    console.log("Escolha 2: Economizar seu dinheiro.");
-    
-    let escolha = prompt("Digite 1 ou 2: ");
-    
+    let escolha = prompt("Fase 2: Você encontra um dilema financeiro.\nEscolha 1: Investir dinheiro em um projeto.\nEscolha 2: Economizar seu dinheiro.\nDigite 1 ou 2:");
+
     if (escolha === '1') {
-        console.log("Seu investimento falhou! Perdeu 5 dinheiro.");
+        alert("Seu investimento falhou! Perdeu 5 dinheiro.");
         recursos.dinheiro -= 5;
     } else if (escolha === '2') {
-        console.log("Você economizou com sucesso! Ganhou 3 dinheiro.");
-        recursos.dinheiro += 3;
+        alert("Você economizou com sucesso! Ganhou 5 dinheiro.");
+        recursos.dinheiro += 5;  
     } else {
-        console.log("Escolha inválida.");
+        alert("Escolha inválida. Você não ganhou nem perdeu recursos.");
     }
 }
 
 function fase3() {
-    console.log("Fase 3: Uma competição de talentos.");
-    console.log("Escolha 1: Usar sua beleza para ganhar a competição.");
-    console.log("Escolha 2: Usar sua inteligência para convencer o jurado.");
-    
-    let escolha = prompt("Digite 1 ou 2: ");
-    
+    let escolha = prompt("Fase 3: Uma competição de talentos.\nEscolha 1: Usar sua beleza para ganhar a competição.\nEscolha 2: Usar sua inteligência para convencer o jurado.\nDigite 1 ou 2:");
+
     if (escolha === '1') {
-        console.log("Você ganhou! Perdeu 2 beleza.");
-        recursos.beauty -= 2;
+        alert("Você ganhou! Perdeu 3 beleza.");
+        recursos.beleza -= 3;  
     } else if (escolha === '2') {
-        console.log("Você convenceu! Ganhou 3 inteligência.");
-        recursos.inteligencia += 3;
+        alert("Você convenceu! Ganhou 5 inteligência.");
+        recursos.inteligencia += 5; 
     } else {
-        console.log("Escolha inválida.");
+        alert("Escolha inválida. Você não ganhou nem perdeu recursos.");
     }
 }
 
 function verificarRecursos() {
-    if (recursos.beauty <= 0 || recursos.inteligencia <= 0 || recursos.dinheiro <= 0) {
-        console.log("Você ficou sem recursos! O jogo recomeça.");
+    if (recursos.beleza <= 0 || recursos.inteligencia <= 0 || recursos.dinheiro <= 0) {
+        alert("Você ficou sem recursos! O jogo recomeça.");
         recursos = { beleza: 10, inteligencia: 10, dinheiro: 10 }; 
     }
 }
@@ -77,18 +63,17 @@ function jogar() {
         fase1();
         verificarRecursos();
         mostrarRecursos();
-        
+
         fase2();
         verificarRecursos();
         mostrarRecursos();
-        
+
         fase3();
         verificarRecursos();
         mostrarRecursos();
 
-        
-        if (recursos.beauty > 0 && recursos.inteligencia > 0 && recursos.dinheiro > 0) {
-            console.log("Parabéns! Você completou o jogo.");
+        if (recursos.beleza > 0 && recursos.inteligencia > 0 && recursos.dinheiro > 0) {
+            alert("Parabéns! Você completou o jogo.");
             break;
         }
     }

@@ -1,6 +1,7 @@
 # Biscate-World
 # Washington Pereira de Melo Souza
 # Beatriz Oliveira de Sousa
+# Arthur Faria Porto
 
     Era uma vez uma menina chamada Beatris, mais conhecida como Bibi.
     Ela precisa embarcar numa aventura para derrota vilões que a desejam destruir ou ter ela como sua princesa.

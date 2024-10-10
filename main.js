@@ -57,7 +57,7 @@ function verificarRecursos() {
     }
 }
 
-function jogar() {
+function start() {
     while (true) {
         mostrarRecursos();
         fase1();
@@ -79,4 +79,4 @@ function jogar() {
     }
 }
 
-jogar();
+start();

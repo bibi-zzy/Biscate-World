@@ -9,13 +9,13 @@ function mostrarRecursos() {
 }
 
 function fase1() {
-    let escolha = prompt("Fase 1: Você encontra um desafio.\nEscolha 1: Tentar impressionar com sua beleza.\nEscolha 2: Usar sua inteligência para resolver o problema.\nDigite 1 ou 2:");
+    let escolha = prompt("Fase 1: Você encontra um principe.\nEscolha 1: Tentar impressionar com sua beleza.\nEscolha 2: Usar sua inteligência para conquistá-lo.\nDigite 1 ou 2:");
 
     if (escolha === '1') {
-        alert("Você impressionou alguém! Ganhou 5 beleza.");
+        alert("Você impressionou ele! Ganhou 5 beleza.");
         recursos.beleza += 5;  
     } else if (escolha === '2') {
-        alert("Você resolveu o problema com sua inteligência! Ganhou 3 inteligência.");
+        alert("Você conquistou ele com a sua inteligencia e ganhou um cargo no Palácio! Ganhou 3 inteligência.");
         recursos.inteligencia += 3;
     } else {
         alert("Escolha inválida. Você não ganhou nem perdeu recursos.");
@@ -23,13 +23,13 @@ function fase1() {
 }
 
 function fase2() {
-    let escolha = prompt("Fase 2: Você encontra um dilema financeiro.\nEscolha 1: Investir dinheiro em um projeto.\nEscolha 2: Economizar seu dinheiro.\nDigite 1 ou 2:");
+    let escolha = prompt("Fase 2: Você encontra um baú com moedas escondidas no castelo.\nEscolha 1: Comprar um vestido com as moedas.\nEscolha 2: Guardar as moedas.\nDigite 1 ou 2:");
 
     if (escolha === '1') {
-        alert("Seu investimento falhou! Perdeu 5 dinheiro.");
+        alert("Seu vestido foi taxado na alfandega do Reino! Perdeu 5 dinheiro.");
         recursos.dinheiro -= 5;
     } else if (escolha === '2') {
-        alert("Você economizou com sucesso! Ganhou 5 dinheiro.");
+        alert("Você investiu seu dinheiro ! Ganhou 5 dinheiro.");
         recursos.dinheiro += 5;  
     } else {
         alert("Escolha inválida. Você não ganhou nem perdeu recursos.");
@@ -37,13 +37,13 @@ function fase2() {
 }
 
 function fase3() {
-    let escolha = prompt("Fase 3: Uma competição de talentos.\nEscolha 1: Usar sua beleza para ganhar a competição.\nEscolha 2: Usar sua inteligência para convencer o jurado.\nDigite 1 ou 2:");
+    let escolha = prompt("Fase 3: Há um baile acontecendo para escolher a esposa do principe.\nEscolha 1: Usar sua beleza para ser escolhida pelo principe.\nEscolha 2: Usar sua inteligência para convencer o rei a ser sua nora.\nDigite 1 ou 2:");
 
     if (escolha === '1') {
-        alert("Você ganhou! Perdeu 3 beleza.");
+        alert("Você foi escolhida! Perdeu 3 beleza.");
         recursos.beleza -= 3;  
     } else if (escolha === '2') {
-        alert("Você convenceu! Ganhou 5 inteligência.");
+        alert("Você convenceu o rei! Ganhou 5 inteligência.");
         recursos.inteligencia += 5; 
     } else {
         alert("Escolha inválida. Você não ganhou nem perdeu recursos.");

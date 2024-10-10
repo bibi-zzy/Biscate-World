@@ -2,15 +2,15 @@
 # Washington Pereira de Melo Souza
 # Beatriz Oliveira de Sousa
 
-    Era uma vez uma menina chamada Beatris, mais conhecida como Bibi.
-    Ela precisa embarcar numa aventura para derrota vilões que a desejam destruir ou ter ela como sua princesa.
+    Era uma vez uma menina chamada Tereza.
+    Ela precisa embarcar numa aventura para ficar rica e se tornar uma princesa.
 
 # DESCRIÇÃO
-    O jogo se passa no Reino BISCATE, um reino mágico, mas muito perigoso pois nele há safados, malucas e homens pilantras.
+    O jogo se passa no Reino BISCATE, um reino mágico, onde você deverá ser esperta para conseguir aquilo que quer.
 
 # REGRAS 
     Sobreviva até o final do jogo VIVO!
     Faça uma escolha para continuar jogando
 # COMO JOGAR
     Para jogar esse jogo o jogador deverá fazer a melhor escolha
-    Cso faça a escola errada o jogo recomeça.
+    Caso faça a escola errada o jogo recomeça.
